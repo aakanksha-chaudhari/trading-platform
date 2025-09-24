@@ -1,0 +1,57 @@
+/* src/pages/Dashboard.css */
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header select {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.dashboard-main {
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-left, .dashboard-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.market-card, .trade-card, .history-card, .portfolio-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.market-card h2, .trade-card h2, .history-card h2, .portfolio-card h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f1f1f1;
+}
