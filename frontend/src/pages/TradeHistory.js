@@ -10,7 +10,7 @@ const TradeHistory = () => {
     const fetchTrades = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/trades", {
+        const res = await axios.get("${import.meta.env.VITE_API_URL}/api/trades", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTrades(res.data);
@@ -23,7 +23,7 @@ const TradeHistory = () => {
     const fetchAnalytics = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/portfolio", {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/portfolio`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setAnalytics(res.data);
